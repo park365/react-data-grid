@@ -97,7 +97,7 @@ export function useViewportColumns<R, SR>({
       viewportColumns.push(column);
     }
 
-    if(viewportColumns.find(i => i.key !== 'FROZEN_RIGHT_COLUMN') && columns.find(i => i.key === 'FROZEN_RIGHT_COLUMN')) {
+    if(viewportColumns.find(i => i.key !== 'action') && columns.find(i => i.key === 'action')) {
       viewportColumns.push({...columns[columns.length - 1], cellClass: 'RIGHT_COLUMN_FROZEN_CLASS'});
     }
     return viewportColumns;
