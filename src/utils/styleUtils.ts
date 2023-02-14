@@ -34,7 +34,7 @@ export function getCellClassname<R, SR>(
     {
       [cellFrozenClassname]: column.frozen,
       [cellFrozenLastClassname]: column.isLastFrozenColumn,
-      'RIGHT_COLUMN_FROZEN_CLASS': column.key === 'FROZEN_RIGHT_COLUMN'
+      'RIGHT_COLUMN_FROZEN_CLASS': column.key === 'action'
     },
     ...extraClasses
   );
